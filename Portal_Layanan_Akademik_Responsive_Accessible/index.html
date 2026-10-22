@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portal Layanan Akademik untuk mengajukan kebutuhan administrasi mahasiswa.">
+  <title>Portal Layanan Akademik | Universitas Pattimura</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#konten-utama">Lewati ke konten utama</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#beranda" aria-label="Portal Layanan Akademik, beranda">
+        <span class="brand-mark" aria-hidden="true">A</span>
+        <span><strong>PORTAL AKADEMIK</strong><small>Layanan Mahasiswa</small></span>
+      </a>
+      <nav aria-label="Navigasi utama">
+        <ul class="nav-list">
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#layanan">Layanan</a></li>
+          <li><a href="#permohonan">Ajukan Permohonan</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="konten-utama">
+    <section class="hero" id="beranda" aria-labelledby="judul-utama">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">PUSAT LAYANAN MAHASISWA</p>
+          <h1 id="judul-utama">Urus kebutuhan akademik, <span>lebih mudah.</span></h1>
+          <p class="hero-text">Temukan layanan administrasi akademik dan ajukan permohonan secara praktis melalui satu portal.</p>
+          <a class="button button-primary" href="#layanan">Jelajahi layanan <span aria-hidden="true">↓</span></a>
+        </div>
+        <aside class="notice" aria-label="Informasi layanan">
+          <span class="notice-icon" aria-hidden="true">i</span>
+          <div><h2>Informasi penting</h2><p>Siapkan data mahasiswa dan dokumen pendukung sebelum mengajukan permohonan. Pastikan alamat email aktif.</p></div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section container" id="layanan" aria-labelledby="judul-layanan">
+      <div class="section-heading">
+        <div><p class="eyebrow">LAYANAN KAMI</p><h2 id="judul-layanan">Apa yang Anda butuhkan?</h2></div>
+        <p>Pilih layanan yang sesuai dengan keperluan akademik Anda.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card">
+          <div class="service-icon icon-blue" aria-hidden="true">▤</div>
+          <p class="card-label">ADMINISTRASI</p>
+          <h3>Surat Aktif Kuliah</h3>
+          <p>Untuk keperluan beasiswa, tunjangan, atau persyaratan administrasi lainnya.</p>
+          <a class="text-link" href="#permohonan">Ajukan surat <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="service-card">
+          <div class="service-icon icon-orange" aria-hidden="true">▥</div>
+          <p class="card-label">AKADEMIK</p>
+          <h3>Transkrip Sementara</h3>
+          <p>Permohonan salinan nilai sementara untuk kebutuhan akademik atau pribadi.</p>
+          <a class="text-link" href="#permohonan">Minta transkrip <span aria-hidden="true">→</span></a>
+        </article>
+        <article class="service-card">
+          <div class="service-icon icon-green" aria-hidden="true">▣</div>
+          <p class="card-label">PERKULIAHAN</p>
+          <h3>Cuti Akademik</h3>
+          <p>Informasi dan pengajuan cuti perkuliahan sesuai ketentuan yang berlaku.</p>
+          <a class="text-link" href="#permohonan">Ajukan cuti <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="request-section" id="permohonan" aria-labelledby="judul-permohonan">
+      <div class="container request-grid">
+        <div class="request-copy">
+          <p class="eyebrow">FORMULIR ONLINE</p>
+          <h2 id="judul-permohonan">Ajukan permohonan</h2>
+          <p>Lengkapi informasi berikut. Kolom bertanda wajib harus diisi sebelum formulir dapat dikirim.</p>
+          <ul class="help-list">
+            <li><span aria-hidden="true">✓</span> Gunakan email yang aktif.</li>
+            <li><span aria-hidden="true">✓</span> Jelaskan kebutuhan dengan singkat dan jelas.</li>
+            <li><span aria-hidden="true">✓</span> Periksa kembali data sebelum mengirim.</li>
+          </ul>
+        </div>
+        <form class="request-form" action="#" method="get">
+          <div class="form-row">
+            <div class="field">
+              <label for="nama">Nama lengkap <span aria-hidden="true">*</span></label>
+              <input id="nama" name="nama" type="text" autocomplete="name" placeholder="Masukkan nama lengkap" required>
+            </div>
+            <div class="field">
+              <label for="nim">NIM <span aria-hidden="true">*</span></label>
+              <input id="nim" name="nim" type="text" inputmode="numeric" autocomplete="off" placeholder="Nomor induk mahasiswa" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="email">Alamat email <span aria-hidden="true">*</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="nama@kampus.ac.id" required>
+            <small>Contoh: mahasiswa@kampus.ac.id</small>
+          </div>
+          <div class="field">
+            <label for="layanan-pilihan">Jenis layanan <span aria-hidden="true">*</span></label>
+            <select id="layanan-pilihan" name="jenis_layanan" required>
+              <option value="" selected disabled>Pilih jenis layanan</option>
+              <option value="surat-aktif">Surat Aktif Kuliah</option>
+              <option value="transkrip">Transkrip Sementara</option>
+              <option value="cuti">Cuti Akademik</option>
+              <option value="legalisir">Permohonan Legalisir</option>
+              <option value="lainnya">Lainnya</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="keperluan">Keperluan / keterangan <span aria-hidden="true">*</span></label>
+            <textarea id="keperluan" name="keperluan" rows="4" minlength="10" maxlength="500" placeholder="Jelaskan keperluan Anda (10–500 karakter)" required></textarea>
+            <small>Maksimal 500 karakter.</small>
+          </div>
+          <div class="form-actions">
+            <p><span aria-hidden="true">*</span> Wajib diisi</p>
+            <button class="button button-primary" type="submit">Kirim permohonan <span aria-hidden="true">→</span></button>
+          </div>
+          <p class="form-note">Demo antarmuka: formulir ini belum terhubung ke server untuk menyimpan permohonan.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand footer-brand" href="#beranda"><span class="brand-mark" aria-hidden="true">A</span><span><strong>PORTAL AKADEMIK</strong><small>Layanan Mahasiswa</small></span></a>
+      <p>Portal Layanan Akademik · Contoh proyek pembelajaran web client</p>
+      <a href="#beranda" class="back-top">Kembali ke atas ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
